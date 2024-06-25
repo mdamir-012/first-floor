@@ -25,8 +25,8 @@ const Navbar = () => {
               <IoIosArrowDropdown />
               </button>
               {dropdownOpen && (
-                <ul className="absolute mt-2 w-32 bg-white text-black shadow-lg">
-                  <li className="px-4 py-2 hover:bg-gray-200">
+                <ul className="absolute  mt-2 w-32  text-black shadow-lg">
+                  <li className="px-4 py-2 hover:bg-gray-200 ">
                     <Link to="/mysore">Mysore</Link>
                   </li>
                   <li className="px-4 py-2 hover:bg-gray-200">
@@ -40,32 +40,32 @@ const Navbar = () => {
           <div className="flex items-center gap-4">
             <ul className="hidden md:flex text-white gap-6 mr-4">
               <li>
-                <Link className="text-lg font-normal text-blue-800" to="/">
+                <Link className="text-lg font-normal text-white" to="/">
                   Buy
                 </Link>
               </li>
               <li>
-                <Link className="text-lg font-normal  text-blue-800" to="/courselist">
+                <Link className="text-lg font-normal  text-white" to="/courselist">
                   Rent
                 </Link>
               </li>
               <li>
-                <Link className="text-lg font-normal  text-blue-800" to="/">
+                <Link className="text-lg font-normal  text-white" to="/">
                   Sell
                 </Link>
               </li>
               <li>
-                <Link className="text-lg font-normal  text-blue-800" to="/">
+                <Link className="text-lg font-normal  text-white" to="/">
                   PG
                 </Link>
               </li>
             </ul>
 
             <div className="flex items-center gap-2">
-              <button className="text-lg text-white bg-green-500 px-4 py-2 rounded-md">
+              <button className="text-lg text-white bg-green-500 px-4 py-2 rounded-md hover:bg-green-700">
                Post Property
               </button>
-              <button className="text-lg text-white bg-blue-500 px-4 py-2 rounded-md">
+              <button className="text-lg text-white bg-blue-500 px-4 py-2 rounded-md hover:bg-blue-900">
                 Login
               </button>
             </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoIosArrowDroprightCircle } from "react-icons/io";
+import SearchBar from "./SearchBar";
 
 const TopHero = () => {
   const [currImage, setcurrImage] = useState(0);
@@ -12,7 +13,7 @@ const TopHero = () => {
   }, []);
 
   return (
-    <div className="flex justify-center items-center h-full">
+    <div className=" justify-center items-center h-full">
       <div className="w-full h-screen max-w-full rounded-lg overflow-hidden shadow-lg relative">
         <div className="relative w-full h-full">
           {img.map((imageUrl, i) => (
@@ -26,6 +27,9 @@ const TopHero = () => {
             />
           ))}
         </div>
+      </div>
+      <div className="className=absolute top-1/4 w-full flex justify-center">
+      <SearchBar/>
       </div>
     </div>
   );
